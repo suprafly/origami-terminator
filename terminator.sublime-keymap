@@ -1,0 +1,31 @@
+[
+  //! Terminator-style keybindings for creating & destroying panes
+  { "keys": ["ctrl+shift+e"], "command": "create_pane_with_file", "args": {"direction": "right"} },
+  { "keys": ["ctrl+shift+o"], "command": "create_pane_with_file", "args": {"direction": "down"} },
+  { "keys": ["ctrl+shift+w"], "command": "destroy_pane", "args": {"direction": "self"} },
+
+  //! Terminator-style keybindings for switching panes
+  { "keys": ["alt+up"], "command": "travel_to_pane", "args": {"direction": "up"} },
+  { "keys": ["alt+right"], "command": "travel_to_pane", "args": {"direction": "right"} },
+  { "keys": ["alt+down"], "command": "travel_to_pane", "args": {"direction": "down"} },
+  { "keys": ["alt+left"], "command": "travel_to_pane", "args": {"direction": "left"} },
+  
+  //! Pseudo-Terminator-style keybindings for zooming/unzooming panes
+  { "keys": ["ctrl+shift+x"], "command": "zoom_pane", "args": {"fraction": 1.0} },
+  { "keys": ["ctrl+shift+c"], "command": "unzoom_pane", "args": {} },
+
+  //! Terminator-style keybindings for resizing panes
+  { "keys": ["ctrl+shift+left"], "command": "resize_pane", "args": {"orientation": "cols", "direction": "left"} },
+  { "keys": ["ctrl+shift+right"], "command": "resize_pane", "args": {"orientation": "cols", "direction": "right"} },
+  { "keys": ["ctrl+shift+up"], "command": "resize_pane", "args": {"orientation": "rows", "direction": "up"} },
+  { "keys": ["ctrl+shift+down"], "command": "resize_pane", "args": {"orientation": "rows", "direction": "down"} },
+
+  //! Terminator-like keybindings for moving windows
+  { "keys": ["ctrl+shift+alt+up"], "command": "carry_file_to_pane", "args": {"direction": "up"} },
+  { "keys": ["ctrl+shift+alt+right"], "command": "carry_file_to_pane", "args": {"direction": "right"} },
+  { "keys": ["ctrl+shift+alt+down"], "command": "carry_file_to_pane", "args": {"direction": "down"} },
+  { "keys": ["ctrl+shift+alt+left"], "command": "carry_file_to_pane", "args": {"direction": "left"} },
+  
+
+
+]
